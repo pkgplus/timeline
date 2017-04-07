@@ -1,0 +1,178 @@
+
+
+/************End Reset**************/
+/************Global**************/
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  color: #222222;
+  font: 120%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  /*padding: 10px;*/
+  -webkit-text-size-adjust: 100%;
+  
+}
+
+/*@media all and (min-width: 40em) {
+    body {
+      padding-left: 20px;
+  }
+}
+*/
+/************End Global**************/
+/************Timeline**************/
+/* Timeline Container */
+.timeline {
+  border-left: 1px solid #d9d9d9;
+  padding-bottom: 30px;
+  position: relative;
+  list-style: none;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+/*.timeline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1.470px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #dddddd;
+    border: 5px solid #dddddd;
+}*/
+
+/* Individual Timeline Item */
+.timeline li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  position: relative;
+}
+.timeline li a {
+    display: block;
+}
+.timeline li .tl-content,.tl-detail {
+  margin-left: 15px;
+}
+
+.tl-arriving:before {
+  content: "\e600";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+
+  color: #1296db;
+  font-family: 'iconfont';
+  font-size: 20px;
+}
+
+.tl-node:before {
+  content: " ";
+  position: absolute;
+  left: -6px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  /*border: 1px solid red;*/
+}
+
+.tl-arriving-future:before {
+  content: "\e600";
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+
+  color: #1296db;
+  font-family: 'iconfont';
+  font-size: 20px;
+}
+
+.tl-local {
+  flex-direction: column;
+  background-color: #f2f8fb;
+}
+
+.tl-nearest-bus {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+}
+.tl-nearest-bus-num {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1296db;
+}
+.tl-nearest-bus-num:after{
+  content: "站";
+  font-size: 10px;
+}
+.tl-nearest-bus-dis {
+  font-size: 12px;
+  color: #bfbfbf;
+  margin-top: 13px;
+}
+.tl-nearest-bus-dis:before{
+  content: "/";
+}
+
+.tl-local:before {
+  content: "\e63b";
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  width: 22px;
+  height: 22px;
+
+  color: red;
+  font-family: 'iconfont';
+  font-size: 20px;
+}
+.tl-local .tl-content:after {
+  content: "(离我最近)";
+  color: red;
+}
+
+.tl-local .tl-content {
+  color: red;
+  font-weight: bold;
+}
+
+.tl-arriving-future:after {
+  content: " ";
+  position: absolute;
+  left: -6px;
+  top: 13px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+
+/* Timestamp */
+.tl-stamp {
+  font-size: 0.70px;
+  color: gray;
+}
+
+.tl-content {
+  font-size: 0.70px;
+  color: gray;
+}
+
+.tl-detail {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
